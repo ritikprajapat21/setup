@@ -5,7 +5,7 @@ cd ~/hyde/Scripts
 bash ./install.sh
 cd ~
 
-sudo pacman -Syu ghostty neovim
+sudo pacman -Syu ghostty neovim vlc
 
 yay google-chrome-stable
 yay brave-bin
