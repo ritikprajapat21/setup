@@ -1,10 +1,21 @@
 #! bin/bash
+echo "Setting hyde config"
+git clone https://github.com/HyDE-Project/HyDE.git ~/hyde
+cd ~/hyde/Scripts
+bash ./install.sh
+cd ~
+
+sudo pacman -Syu ghostty neovim
+
+yay google-chrome-stable
+yay brave-bin
 
 # Setting up Neovim
 echo "Cloning nvim git repo"
 git clone https://github.com/ritikprajapat21/NvChadConfig ~/.config/nvim
 cd ~/.config/nvim
 git checkout lazyvim
+cd ~
 
 # Setting ghostty
 echo "Cloning ghostty repo"
